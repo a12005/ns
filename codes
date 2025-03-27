@@ -17,13 +17,11 @@ for (char c : text.toCharArray()) {
 if (Character.isUpperCase(c)) result.append((char) ((c - 'A' + shift) % 26 + 'A')); 
 else if (Character.isLowerCase(c)) result.append((char) ((c - 'a' + shift) % 26 + 
 'a')); 
- 
-} 
- 
-else result.append(c); 
+ else result.append(c); 
+}
 return result.toString(); 
 } 
-} 
+}
 -----------------------------------------------------------------------------------
  
 2. Playfair cipher 
